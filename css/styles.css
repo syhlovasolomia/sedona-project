@@ -798,3 +798,56 @@ button {
   line-height: 21px;
   color: #333333;
 }
+
+.hotels {
+  padding: 29px 6.25% 48px 6.25%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotels__title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.hotels__deals {
+  padding: 18px 0 35px 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.hotels__search {
+  width: 100%;
+}
+
+.hotels__search a {
+  display: block;
+  padding: 16px 0 16px 0;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  cursor: pointer;
+}
+
+.hotels__search a:hover {
+  background-color: #669ec0;
+}
+
+.hotels__search a:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotels__search a:disabled {
+  background-color: #e5e5e5;
+}
