@@ -5,27 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>City of Sedona</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <nav class="main-navigation">
-        <ul class="main-navigation__menu  main-navigation--closed">
-            <li class="main-navigation__item  main-navigation__item--active">
-                <a class="main-navigation__link--active">Home</a>
-                <button type="button" class="main-navigation__close-button" tabindex="0">Close menu</button>
+<body class="main-page">
+    <nav class="main-nav">
+        <ul class="main-nav__menu  main-nav--closed">
+            <li class="main-nav__item  main-nav__item--active">
+                <a class="main-nav__link--active">Home</a>
+                <button type="button" class="main-nav__close-button"></button>
             </li>
-            <li class="main-navigation__item"><a href="#">Photos and Videos</a></li>
-            <li class="main-navigation__item"><a href="#">Feedback form</a></li>
-            <li class="main-navigation__item"><a href="#">Sedona City</a></li>
+            <li class="main-nav__item"><a href="#">Photos and Videos</a></li>
+            <li class="main-nav__item"><a href="#">Feedback form</a></li>
+            <li class="main-nav__item"><a href="#">Sedona City</a></li>
         </ul>
-        <div class="main-navigation__opener">
-            <picture class="main-navigation__logo-wrapper">
+        <div class="main-nav__opener">
+            <picture class="main-nav__logo-wrapper">
                 <source media="(min-width:1200px)" srcset="img/logotype-desktop.svg">
                 <source media="(min-width:768px)" srcset="img/logotype-tablet.svg">
-                <img src="img/logotype-mobile.svg" class="main-navigation__logo" width="102" height="83" alt="Logotype">
+                <img src="img/logotype-mobile.svg" class="main-nav__logo" width="102" height="83" alt="Logotype">
             </picture>
-            <button type="button" class="main-navigation__open-button" tabindex="0">Open menu</button>
+            <button type="button" class="main-nav__open-button"></button>
         </div>
     </nav>
 
@@ -36,7 +36,7 @@
     <main class="main">
         <section class="main-title">
             <h1 class="main-title__name">Sedona is a small town in Arizona that deserves better!</h1>
-            <p class="main-title__desc  main-title__desc--index">Let's take a look at 5 reasons why Sedona is cooler
+            <p class="main-title__desc  main-title__desc--index">Let's take a look at 5 reasonss why Sedona is cooler
                 than the Grand Canyon!</p>
         </section>
 
@@ -44,8 +44,8 @@
             <section class="advantages__reasons">
                 <div class="advantages__desc">
                     <b class="advantages__title">A real town</b>
-                    <p class="advantages__count">— №1 —</p>
-                    <p class="advantages__about">Sedona is not an attraction for tourists. It has its own life</p>
+                    <p class="advantages__total">— №1 —</p>
+                    <p class="advantages__info">Sedona is not an attraction for tourists. It has its own life</p>
                 </div>
                 <div class="advantages__photo-wrapper">
                     <picture>
@@ -62,10 +62,29 @@
                 </div>
             </section>
 
-            <ul class="advantages__reason  advantages__more">
+            <ul class="advantages__reasons  advantages__more">
                 <li class="advantages__item">
                     <div class="advantages__logo-wrapper">
-                        <img src="img/icon-house.svg" class="advantages__logo-house"></img>
+                        <svg width="75" height="73" viewBox="0 0 75 73" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="advantages__logo-house">
+                            <path d="M29.5 65.3H45.5V41.4H29.5V65.3ZM42.6 62.4H32.4V44.3H42.5V62.4H42.6Z"
+                                fill="#81B3D2" />
+                            <path
+                                d="M72.6 39.4L74.7 37.3L64.8 27.4V0.4H51V13.6L37.3 0L0 37.4L2.1 39.5L9.9 31.7V69.5H6V72.4H69.9V69.5H64.8V31.6L72.6 39.4ZM53.9 3.4H61.8V24.5L53.9 16.6V3.4ZM61.9 69.4H12.9V28.7L37.3 4.2L61.8 28.7V69.4H61.9Z"
+                                fill="#81B3D2" />
+                            <path
+                                d="M29.8 27.2C29.8 31.5 33.3 35 37.5 35C41.8 35 45.3 31.5 45.3 27.2C45.3 22.9 41.8 19.5 37.5 19.5C33.2 19.5 29.8 22.9 29.8 27.2ZM37.5 22.2C40.2 22.2 42.5 24.4 42.5 27.2C42.5 29.9 40.3 32.2 37.5 32.2C34.8 32.2 32.5 30 32.5 27.2C32.5 24.5 34.8 22.2 37.5 22.2Z"
+                                fill="#81B3D2" />
+                            <path d="M19.9 41.4H16.9V45.3H19.9V41.4Z" fill="#81B3D2" />
+                            <path d="M25.8 41.4H22.8V45.3H25.8V41.4Z" fill="#81B3D2" />
+                            <path d="M19.9 47.4H16.9V51.3H19.9V47.4Z" fill="#81B3D2" />
+                            <path d="M25.8 47.4H22.8V51.3H25.8V47.4Z" fill="#81B3D2" />
+                            <path d="M51.8 41.4H48.8V45.3H51.8V41.4Z" fill="#81B3D2" />
+                            <path d="M57.8 41.4H54.8V45.3H57.8V41.4Z" fill="#81B3D2" />
+                            <path d="M51.8 47.4H48.8V51.3H51.8V47.4Z" fill="#81B3D2" />
+                            <path d="M57.8 47.4H54.8V51.3H57.8V47.4Z" fill="#81B3D2" />
+                        </svg>
+
                     </div>
                     <div class="advantages__item-desc">
                         <b>Accommodation</b>
@@ -74,7 +93,12 @@
                 </li>
                 <li class="advantages__item">
                     <div class="advantages__logo-wrapper">
-                        <img src="img/icon-gift.svg" class="advantages__logo-gift"></img>
+                        <svg width="63" height="76" viewBox="0 0 63 76" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="advantages__logo-gift">
+                            <path
+                                d="M60.2 22.1237H60.1H35.8C49.4 15.3237 50.5 11.0237 50 8.62371C48.9 4.72371 44.4 1.72371 40.2 3.32371C34.7 5.42371 33.2 13.6237 31.7 19.5237C29.8 13.5237 28 5.92371 23.7 2.02371C22.5 0.923705 20.7 -0.176294 18 0.0237057C14 0.423706 8.3 5.32371 10.7 10.8237C12.9 16.1237 20.2 19.5237 25.1 22.2237H2.8C1.2 22.2237 0 23.5237 0 25.0237V36.2237C0 37.8237 1.3 39.0237 2.8 39.0237H3.1V75.0237H60.1V39.0237H60.2C61.8 39.0237 63 37.7237 63 36.2237V25.0237C63 23.4237 61.7 22.1237 60.2 22.1237ZM41.8 5.82371C43.9 5.52371 46.7 7.12371 47 9.02371C47.4 11.7237 43.7 14.2237 42 15.3237C39.5 17.0237 37.1 17.9237 34.8 19.3237C35.6 15.6237 37.3 6.42371 41.8 5.82371ZM19.2 15.6237C17 14.1237 12.8 11.2237 12.9 7.92371C13 4.32371 18.6 1.42371 21.6 4.12371C25.4 7.42371 27.2 15.1237 28.6 20.5237C25.4 18.9237 22.4 17.7237 19.2 15.6237ZM25.1 72.0237H6V39.0237H25.1V72.0237ZM25.1 36.0237H3V25.1237H25.1V36.0237ZM35.1 72.0237H28V25.1237H35.1V72.0237ZM57.1 72.0237H38.1V39.0237H57.2V72.0237H57.1ZM60 36.0237H38.1V25.1237H60V36.0237Z"
+                                fill="#81B3D2" />
+                        </svg>
                     </div>
                     <div class="advantages__item-desc">
                         <b>Souvenirs</b>
@@ -83,7 +107,28 @@
                 </li>
                 <li class="advantages__item">
                     <div class="advantages__logo-wrapper">
-                        <img src="img/icon-burger.svg" class="advantages__logo-burger"></img>
+                        <svg width="77" height="69" viewBox="0 0 77 69" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="advantages__logo-burger">
+                            <path
+                                d="M71.9 46H4.3C1.9 46 0 48 0 50.3V53.8C0 56.1 1.9 58 4.3 58H5.3V59C5.3 64.5 9.8 68.9 15.2 68.9H61C66.5 68.9 70.9 64.4 70.9 59V58H71.9C74.2 58 76.2 56.1 76.2 53.7V50.2C76.2 48 74.3 46 71.9 46ZM68 59C68 62.8 64.9 65.9 61.1 65.9H15.1C11.3 65.9 8.2 62.8 8.2 59V58H68V59ZM73.2 53.7C73.2 54.4 72.6 55 71.9 55H4.3C3.6 55 3 54.4 3 53.7V50.2C3 49.6 3.6 49 4.3 49H72C72.7 49 73.3 49.6 73.3 50.3V53.7H73.2Z"
+                                fill="#81B3D2" />
+                            <path
+                                d="M16.2 37.9L21.6 41.9L27.1 37.9L32.6 41.9L38.1 37.9L43.5 41.9L49 37.9L54.5 41.9L60 37.9L65.5 41.9L71.8 37.2L70.1 34.8L65.5 38.1L60 34.1L54.5 38.1L49 34.1L43.5 38.1L38.1 34.1L32.6 38.1L27.1 34.1L21.6 38.1L16.2 34.1L10.7 38.1L6.10005 34.8L4.30005 37.2L10.7 41.9L16.2 37.9Z"
+                                fill="#81B3D2" />
+                            <path
+                                d="M70.9 31.1C70.9 30.5 71 28.5 70.9 28.1C70.2 12.5 55.7999 0 38.0999 0C20.3999 0 5.89995 12.5 5.19995 28.1C5.19995 28.5 5.19995 30.5 5.19995 31.1H70.9ZM38.0999 3C54.0999 3 67.3 14.2 67.9 28.1H8.19995C8.89995 14.2 22.0999 3 38.0999 3Z"
+                                fill="#81B3D2" />
+                            <path
+                                d="M38.1 17C39.2045 17 40.1 16.1046 40.1 15C40.1 13.8954 39.2045 13 38.1 13C36.9954 13 36.1 13.8954 36.1 15C36.1 16.1046 36.9954 17 38.1 17Z"
+                                fill="#81B3D2" />
+                            <path
+                                d="M30.1 12.1C31.2045 12.1 32.1 11.2045 32.1 10.1C32.1 8.99541 31.2045 8.09998 30.1 8.09998C28.9954 8.09998 28.1 8.99541 28.1 10.1C28.1 11.2045 28.9954 12.1 30.1 12.1Z"
+                                fill="#81B3D2" />
+                            <path
+                                d="M46.1 12.1C47.2045 12.1 48.1 11.2045 48.1 10.1C48.1 8.99541 47.2045 8.09998 46.1 8.09998C44.9954 8.09998 44.1 8.99541 44.1 10.1C44.1 11.2045 44.9954 12.1 46.1 12.1Z"
+                                fill="#81B3D2" />
+                        </svg>
+
                     </div>
                     <div class="advantages__item-desc">
                         <b>Food</b>
@@ -92,11 +137,11 @@
                 </li>
             </ul>
 
-            <section class="advantages__reason">
+            <section class="advantages__reasons">
                 <div class="advantages__desc">
                     <b class="advantages__title">There is the Devil's Bridge</b>
-                    <p class="advantages__count">— №2 —</p>
-                    <p class="advantages__about">Yes, you can walk across it! If you dare, of course</p>
+                    <p class="advantages__total">— №2 —</p>
+                    <p class="advantages__info">Yes, you can walk across it! If you dare, of course</p>
                 </div>
                 <div class="advantages__photo-wrapper">
                     <picture>
@@ -113,28 +158,28 @@
                 </div>
             </section>
 
-            <div class="advantages__reason-wrapper">
-                <section class="advantages__reason">
+            <div class="advantages__reasons-wrapper">
+                <section class="advantages__reasons">
                     <div class="advantages__desc">
                         <b class="advantages__title">Small area</b>
-                        <p class="advantages__count">— №3 —</p>
-                        <p class="advantages__about">All interesting places are very close</p>
+                        <p class="advantages__total">— №3 —</p>
+                        <p class="advantages__info">All interesting places are very close</p>
                     </div>
                 </section>
 
-                <section class="advantages__reason">
+                <section class="advantages__reasons">
                     <div class="advantages__desc">
                         <b class="advantages__title">Beautiful road</b>
-                        <p class="advantages__count">— №4 —</p>
-                        <p class="advantages__about">Driving to Sedona from Las Vegas is not boring at all!</p>
+                        <p class="advantages__total">— №4 —</p>
+                        <p class="advantages__info">Driving to Sedona from Las Vegas is not boring at all!</p>
                     </div>
                 </section>
 
-                <section class="advantages__reason">
+                <section class="advantages__reasons">
                     <div class="advantages__desc">
                         <b class="advantages__title">Few tourists</b>
-                        <p class="advantages__count">— №5 —</p>
-                        <p class="advantages__about">Most go to the Grand Canyon and crowd there</p>
+                        <p class="advantages__total">— №5 —</p>
+                        <p class="advantages__info">Most go to the Grand Canyon and crowd there</p>
                     </div>
                 </section>
             </div>
@@ -150,29 +195,26 @@
     </main>
 
     <footer class="footer">
-        <b class="footer__visitsedona">#visitsedona</b>
+        <b class="footer__tag">#visitsedona</b>
         <section class="social">
-            <a href="#" class="social__btn">
-                <svg xmlns="http://www.w3.org/2000/svg" class="social__btn-tw">
-                    <path d=" M24 4.37a9.6 9.6 0 0 1-2.83.8 5.04 5.04 0 0 0 2.17-2.8c-.95.58-2 1-3.13 1.22A4.86 4.86 0 0
-                    0 16.61 2a4.99 4.99 0 0 0-4.79 6.2A13.87 13.87 0 0 1 1.67 2.92 5.12 5.12 0 0 0 3.2 9.67a4.82 4.82 0
-                    0 1-2.23-.64v.07c0 2.44 1.7 4.48 3.95 4.95a4.84 4.84 0 0 1-2.22.08c.63 2.01 2.45 3.47 4.6 3.51A9.72
-                    9.72 0 0 1 0 19.74 13.68 13.68 0 0 0 7.55 22c9.06 0 14-7.7 14-14.37v-.65c.96-.71 1.79-1.6
-                    2.45-2.61z" />
+            <a href="#" class="social__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#ffffff">
+                    <path
+                        d="M24 4.37a9.6 9.6 0 0 1-2.83.8 5.04 5.04 0 0 0 2.17-2.8c-.95.58-2 1-3.13 1.22A4.86 4.86 0 0 0 16.61 2a4.99 4.99 0 0 0-4.79 6.2A13.87 13.87 0 0 1 1.67 2.92 5.12 5.12 0 0 0 3.2 9.67a4.82 4.82 0 0 1-2.23-.64v.07c0 2.44 1.7 4.48 3.95 4.95a4.84 4.84 0 0 1-2.22.08c.63 2.01 2.45 3.47 4.6 3.51A9.72 9.72 0 0 1 0 19.74 13.68 13.68 0 0 0 7.55 22c9.06 0 14-7.7 14-14.37v-.65c.96-.71 1.79-1.6 2.45-2.61z" />
                 </svg>
             </a>
 
-            <a href="#" class="social__btn">
-                <svg xmlns="http://www.w3.org/2000/svg" class="social__btn-fb">
+            <a href="#" class="social__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#ffffff">
                     <path
-                        d="M22.5 0c.83 0 1.5.67 1.5 1.5v21c0 .83-.67 1.5-1.5 1.5h-6v-9h3l.75-3.75H16.5v-1.5c0-1.5.75-2.25 2.25-2.25h1.5V3.75h-3c-2.76 0-4.5 2.16-4.5 5.25v2.25h-3V15h3v9H1.5A1.5 1.5 0 0 1 0 22.5v-21C0 .67.67 0 1.5 0h21z" />
+                        d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm4 7.278V4.5h-2.286c-2.1 0-3.428 1.6-3.428 3.889v1.667H8v2.777h2.286V19.5h2.857v-6.667h2.286L16 10.056h-2.857V8.944c0-1.11.572-1.666 1.714-1.666H16z" />
                 </svg>
             </a>
 
-            <a href="#" class="social__btn">
-                <svg xmlns="http://www.w3.org/2000/svg" class="social__btn-yt">
+            <a href="#" class="social__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#ffffff">
                     <path
-                        d="M12.04 3.5c.59 0 7.54.02 9.34.5a3.02 3.02 0 0 1 2.12 2.15C24 8.05 24 12 24 12v.04c0 .43-.03 4.03-.5 5.8A3.02 3.02 0 0 1 21.38 20c-1.76.48-8.45.5-9.3.51h-.17c-.85 0-7.54-.03-9.29-.5A3.02 3.02 0 0 1 .5 17.84c-.42-1.61-.49-4.7-.5-5.6v-.5c.01-.9.08-3.99.5-5.6a3.02 3.02 0 0 1 2.12-2.14c1.8-.49 8.75-.51 9.34-.51zM9.54 8.4v7.18L15.82 12 9.54 8.41z" />
+                        d="M19.62 11.43c2.35 0 4.26 1.9 4.37 4.27l.01.21v3.6c0 2.4-1.85 4.37-4.17 4.48l-.21.01H4.38a4.43 4.43 0 0 1-4.37-4.27L0 19.52v-3.6c0-2.4 1.85-4.37 4.17-4.48H19.62zm-1.15 3.64c-.54 0-.98.17-1.33.5-.3.3-.47.68-.5 1.12l-.01.2v2.8c0 .59.15 1.06.46 1.4.32.34.75.51 1.29.51.6 0 1.06-.16 1.36-.48.27-.29.42-.7.45-1.23l.01-.21v-.32h-1.25v.28c0 .37-.04.6-.12.71-.08.11-.22.16-.42.16-.2 0-.33-.06-.41-.19-.07-.1-.1-.28-.12-.52V18.47h2.32V16.9c0-.59-.15-1.04-.45-1.35-.3-.32-.72-.47-1.28-.47zm-9.14.15H8.12v5.2c0 .36.07.64.21.82.14.19.35.28.63.28.23 0 .47-.06.71-.2.2-.1.38-.24.56-.43l.14-.14v.68h1.21v-6.21h-1.2v4.72c-.12.13-.25.24-.39.33a.68.68 0 0 1-.33.13c-.12 0-.2-.03-.25-.1a.44.44 0 0 1-.07-.21V15.22zm4.4-2.2H12.5v8.4h1.22v-.47a1.42 1.42 0 0 0 1.15.56c.37 0 .65-.12.83-.35.17-.2.26-.48.28-.83l.01-.18V16.7c0-.5-.1-.9-.3-1.16-.2-.26-.5-.4-.88-.4-.2 0-.38.05-.57.15-.13.08-.26.18-.39.3l-.13.13v-2.7zm-6.15 0h-4.2v1.22H4.8v7.19h1.37v-7.2h1.41v-1.22zm6.65 3.11c.17 0 .3.05.38.16.07.09.11.2.12.36V19.97c0 .2-.03.35-.1.43-.07.1-.17.14-.32.14a.7.7 0 0 1-.49-.2l-.1-.1v-3.86a.87.87 0 0 1 .26-.19.59.59 0 0 1 .25-.06zm4.19.02c.18 0 .32.06.4.17.07.09.11.23.13.41v.78h-1.07v-.63c0-.26.04-.45.12-.56.09-.11.23-.17.42-.17zM11.85 2.26c.57 0 1.03.17 1.4.5.32.29.5.66.53 1.1v3.71a1.8 1.8 0 0 1-.52 1.38c-.36.33-.85.5-1.47.5-.6 0-1.07-.18-1.43-.52-.32-.3-.5-.7-.53-1.2l-.01-.19V4c0-.53.18-.96.55-1.27.37-.31.86-.47 1.48-.47zm4.41.17v5.25c0 .16.03.28.09.35.05.07.15.1.28.1.1 0 .22-.04.38-.14.15-.1.3-.22.42-.36v-5.2h1.37v6.84h-1.37v-.75c-.25.28-.51.49-.79.63-.27.15-.53.22-.79.22-.32 0-.55-.1-.72-.3-.15-.2-.23-.51-.23-.92V2.43h1.36zM6.1 0l1 3.7h.1L8.13 0h1.57L7.9 5.43v3.84H6.39V5.6L4.55 0H6.1zm5.69 3.45a.6.6 0 0 0-.4.13.46.46 0 0 0-.16.28v3.81c0 .19.04.33.14.44.1.1.24.15.42.15a.6.6 0 0 0 .44-.16c.09-.08.14-.19.16-.32V3.95a.45.45 0 0 0-.16-.37.67.67 0 0 0-.44-.13z" />
                 </svg>
             </a>
         </section>
